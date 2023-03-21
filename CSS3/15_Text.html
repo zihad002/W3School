@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CSS Text</title>
+		<style type="text/css">
+
+			body {
+				background-color:yellow;
+			}
+
+			div {
+				background-color: orange;
+				border: 5px solid gray;
+				padding: 8px;
+			}
+
+			h1.formatting {
+				background-color: white;
+				text-align: center;
+				text-transform: uppercase;
+				color: green;
+
+			}
+			p.formatting {
+				text-indent: center;
+				text-align: justify;
+				letter-spacing: 3px;
+			}
+
+			a {
+				text-decoration: none;
+				color: blue;
+			}
+
+			p.overline {
+				text-decoration: overline;
+				text-decoration-style: solid;
+				text-decoration-thickness: auto;
+				text-transform: uppercase;
+				text-indent: 50px;
+			}
+			p.line-through {
+				text-decoration: line-through;
+				text-decoration-style: double;
+				text-decoration-thickness: 5px;
+				text-transform: lowercase;
+			}
+			p.underline {
+				text-decoration: underline;
+				text-decoration-style: wavy;
+				text-decoration-thickness: 15%;
+				text-transform: capitalize; 
+				letter-spacing: -2px;
+			}
+			p.ex {
+				text-decoration: overline underline;
+				text-decoration-style: wavy;
+				text-decoration-color: red;
+			}
+
+			h1.shadow1
+			{
+				text-shadow: 2px 2px red;
+			}
+			h1.shadow2 {
+				text-shadow: 2px 2px 5px green;
+			}
+
+			h1.shadow3 {
+				color: white;
+				text-shadow: 2px 2px 4px #000000;
+			}
+			h1.shadow4 {
+				text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+			}
+			h1.shadow5 {
+				color: white;
+				text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; }
+		</style>
+
+	</head>
+
+	<body>
+		<div>
+  		<h1 class="formatting">text formatting</h1>
+  		<p class="formatting">This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
+  		The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
+  		<a target="_blank" href="tryitaeac.html?filename=trycss_text">"Try it Yourself"</a> link.</p>
+		</div>
+
+		<p class="overline">Overline text decoration</p1>
+		<p class="line-through">Line-through text decoration</p>
+		<p class="underline">Underline text decoration</p>
+		<p class="ex">Overline and underline text decoration.</p>
+
+		<p><strong>Note:</strong> It is not recommended to underline text that is not a link, as this often confuses 
+		the reader.</p>
+
+		<h1 class="shadow1">Text-Shadow Effect </h1>
+
+		<h1 class="shadow2">Text-Shadow Effect </h1>
+
+		<h1 class="shadow3">Text-Shadow Effect </h1>
+
+		<h1 class="shadow4">Text-shadow with red and blue neon glow! </h1>
+
+		<h1 class="shadow5">Text-shadow Effect </h1>
+
+
+	</body>
+
+</html>
