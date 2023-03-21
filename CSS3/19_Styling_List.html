@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CSS Styling list</title>
+		<style type="text/css">
+			ul.a {
+			  list-style-type: circle;
+			  list-style-position: outside;
+			}
+
+			ul.b {
+			  list-style-type: square;
+			  list-style-image: ('image.gif');
+			  list-style-position: inside;
+			}
+
+			ol.c {
+				background-color: #ff9999;
+				padding: 20px;
+			}
+		
+			ol.d {
+			  	list-style-type: lower-alpha;
+			    background: #3399ff;
+  				padding: 20px;
+			}
+
+			ol.c li {
+  				background: #ffe5e5;
+ 				 color: darkred;
+  				padding: 5px;
+  				margin-left: 35px;
+				}
+
+		ol.d li {
+  				background: #cce5ff;
+  				color: darkblue;
+  				margin: 5px;
+
+		</style>
+	</head>
+
+	<body>
+		<h2>The list-style-type Property</h2>
+
+		<p>Example of unordered lists:</p>
+		<ul class="a">
+		  <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+		  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+		  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+		</ul>
+
+		<ul class="b">
+		  <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+		  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+		  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+		</ul>
+
+		<p>Example of ordered lists:</p>
+
+		<ol class="c">
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Coca Cola</li>
+		</ol>
+
+		<ol class="d">
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Coca Cola</li>
+		</ol>
+
+	</body>
+
+</html>
