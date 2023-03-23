@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Layout - Horizontal & Vertical</title>
+	<style type="text/css">
+	 	img {
+	 		display: block ;
+	 		margin-left: auto;
+	 		margin-right: auto;
+	 	}
+
+	 	.right {
+	 		position: absolute;
+	 		right: 0;
+	 		width: 300px;
+	 		margin: auto;
+	 		border: 3px solid red;
+	 		padding: 10px;
+	 	}
+
+	 	.rightfloat {
+	 		float: right;
+	 		width: 300px;
+	 		border: 3px solid green;
+	 		padding: 10px;
+	 	}
+
+	 	.float {
+	 		margin-top: 15%;
+
+	 	}
+	 	.new {
+	 		margin-top: 20%;
+	 	}
+
+	 	.img1 {
+	 		float: right;
+
+	 	}
+
+	 	.img2 {
+	 		float: right;
+
+	 	}
+
+	 	.withoutclearfix  {
+	 		width: auto;
+	 		height: auto;
+	 		padding: 10px;
+	 		border: 3px solid blue;
+	 	}
+
+	 	.clearfix {
+	 			border: 3px solid green;
+	 			padding: 10px;
+	 	}
+	 	.clearfix::after {
+	 		content: "";
+	 		clear: both;
+	 		display: table;
+	 	}		
+
+	 	.center  {
+	 		height: 200px;
+	 		position: relative;
+	 		border: 3px solid red;
+	 	}
+
+	 	.center p {
+	 		margin: 0;
+	 		position: absolute;
+	 		top: 50%;
+	 		left: 50%;
+	 		-ms-transform: translate(-50%, -50%);
+	 		transform: translate(-50%, -50%);
+	 	}
+	 	.center1 {
+	 		border: 3px solid yellow;
+	 		justify-content: center;
+	 		align-items: center;
+	 		height: 200px;
+	 		display: flex;
+	 	}
+
+	</style>
+
+</head>
+
+<body>
+	<h2>Center an Image</h2>
+	<p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+
+	<img src="img_5terre_wide.jpg" alt="Paris" style="width:40%">
+
+
+	<h2>Right align with the position property</h2>
+
+	<p>An example of how to right align elements with the position property:</p>
+
+	<div class="right">
+	  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+	</div>
+
+
+	<br> <br>
+
+	<h2 class="float">Right align with the float property</h2>
+
+	<p>An example of how to right align elements with the float property:</p>
+
+	<div class="rightfloat">
+	  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+	</div>
+
+	<h2 class="new">Without Clearfix</h2>
+
+	<p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+	<div class="withoutclearfix">
+	  <img class="img1" src="img_5terre_wide.jpg" alt="Pineapple" width="170" height="170">
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+	</div>
+
+	<h2 style="clear:right">With New Modern Clearfix</h2>
+	<p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+	<div class="clearfix">
+	  <img class="img2" src="img_5terre_wide.jpg" alt="Pineapple" width="170" height="170">
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+	</div>
+
+	<h2>Center with position and transform</h2>
+
+	<p>In this example, we use positioning and the transform property to vertically and horizontally center the div element:</p>
+
+	<div class="center">
+	  <p>I am vertically and horizontally centered.</p>
+	</div>
+
+	<h2>Flexbox Centering</h2>
+
+	<p>A container with both the justify-content and the align-items properties set to <em>center</em> will align the item(s) in the center (in both axis).</p>
+
+	<div class="center1">
+	  <p>I am vertically and horizontally centered.</p>
+	</div>
+
+</body>
+
+</html>
