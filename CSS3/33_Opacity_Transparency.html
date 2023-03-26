@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Image Opacity/Transparancy</title>
+	<style type="text/css">
+		.opacity1 {
+			opacity: 0.5;
+		}
+		.opacity1:hover {
+			opacity: 1.0;
+		}
+
+		div {
+			float: left;
+			padding: 10px;
+		}
+
+		.first {
+			background-color: green;
+			padding: 10px;
+			opacity: 0.3;
+		}
+
+		.second {
+			background-color: green;
+			padding: 10px;
+			opacity: 0.6;
+		}
+
+		.third {
+			background-color: green;
+			padding: 10px;
+			opacity: 0.9;
+		}
+
+		.default {
+			background-color: green;
+			padding: 10px;
+			opacity: 1.0;
+		}
+
+		.background {
+			background: url(img_5terre_wide.jpg) repeat;
+			border: 2px solid green;
+		}
+
+		.transbox {
+			margin: 30px;
+			background-color: #FFFFFF;
+			border: 1px solid yellow;
+			opacity: 0.6;
+		}
+
+		.transbox2 {
+			margin: 5%;
+			font-weight: bold;
+			color: red;
+			text-align: center;
+			
+		}
+
+
+
+	</style>
+
+</head>
+
+<body>
+	<h1>Image Transparency</h1>
+	<p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+
+	<p>Image with 50% opacity:</p>
+	<img class="opacity1" src="img_5terre_wide.jpg" alt="Forest" width="170" height="100">
+
+
+	<h1>Transparent Box</h1>
+	<p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+
+	<div class="opacity">
+		<div class="first"><p>opacity 0.1</p></div>
+		<div class="second"><p>opacity 0.3</p></div>
+		<div class="third"><p>opacity 0.6</p></div>
+		<div class="default"><p>opacity 1 (default)</p></div>
+	</div>
+
+	<div class="background">
+	  <div class="transbox">
+	    <p class="transbox2">This is some text that is placed in the transparent box.</p>
+	  </div>
+	</div>
+
+</body>
+
+</html>
